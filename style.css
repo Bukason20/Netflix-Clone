@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +14,6 @@ body {
     background-position: center;
     background-size: cover;
     min-height: 100vh;
-    position: relative;
     padding: 20px 50px;
 }
 nav{
@@ -26,10 +23,8 @@ nav{
     
 
 }
-.logo{
-    color: #E50914;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
+.logo img{
+    width: 8rem;
 }
 
 .nav-btns {
@@ -51,6 +46,14 @@ nav{
     cursor: pointer;
     padding: 5px 10px;
 }
+#language select{
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+
+    
+}
 #login{
     background-color: #E50914;
     height: 30px;
@@ -65,12 +68,8 @@ nav{
 .hero-contents {
     color: white;
     text-align: center;
-    /* margin: 80px auto 50px; */
+    margin: 100px auto 50px;
     font-family: Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 30px;
 }
 .hero-contents p{
@@ -222,7 +221,7 @@ nav{
 /* ----------------------------------------------------FAQs SECTION--------------------------------------- */
 .faqs{
     padding: 60px;
-    border-bottom: 4px solid #222222;
+    border-bottom: 8px solid #222222;
 }
 .faqs h1{
     text-align: center;
@@ -284,14 +283,13 @@ nav{
         /* background-color: orange; */
     }
     .hero-section{
-        min-height: 70vh;
+        min-height: 60vh;
         padding: 20px 20px;
-        background-color: green;
         overflow: hidden;
     }
     
-    .logo{
-        font-size: 30px;
+    .logo img{
+        width: 6rem;
     }
     
     #language {
@@ -308,7 +306,8 @@ nav{
     }
     .hero-contents {
         /* background-color: blue; */
-        top: 55%;
+        margin-top: 60px;
+        margin-bottom: 30px;
     }
     .hero-title {
         font-size: 30px;
@@ -355,4 +354,42 @@ nav{
         padding: 40px 20px;
         gap: 0;
     }
+    .faqs{
+        padding: 40px 20px;
+    }
+    .faqs h1{
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+    }
+    .question{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #303030;
+        max-width: 320px;
+        margin: 0 auto 15px;
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    /* -------------------------------------------FOOTER SECTION----------------------------------------------- */
+    #footer{
+        margin-top: 0px;
+        padding: 30px 20px;
+        color: #757575;
+        font-size: 0.9rem;
+    }
+    .footer-links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    #questions{
+        margin-bottom: 2rem;
+    }
+    
+    #footer #language{
+        margin-top: 2rem;
+    }
+
 }

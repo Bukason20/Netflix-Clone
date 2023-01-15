@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #282828;
+}
+
+/* -------------------------------------------------NAVBAR SECTION----------------------------------- */
+nav{
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo{
+    color: #E50914;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+nav .first{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+    font-size: 0.9rem;
+}
+
+nav .second{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.second img{
+    width: 1rem;
+}
+.second p{
+    color: white;
+    font-size: 0.9rem;
+}
+#profile-img {
+    width: 1.5rem;
+}
+
+/* ------------------------------------------------HERO SECTION--------------------------------------- */
+.hero{
+    background: url(images/home-page/home-hero.png);
+    height: fit-content;
+    padding: 150px 0 0 40px;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero #movie-title {
+    width: 350px;
+    text-align: center;
+    color: white;
+    font-size: 4.8rem;
+    line-height: 3.2rem;
+    overflow: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    /* background-color: blue; */
+}
+.rank {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 10px 0;
+}
+.rank p{
+    font-size: 1.2rem;
+    color: white;
+}
+#movie-desc{
+    color: white;
+    margin: 0 0 10px;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#btn1, #btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn2{
+    background-color: rgba(255,255,255,0.3);
+}
+#popular{
+    color: white;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.popular-movies{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.popular-movies img{
+    
+
+}
+
+.movies{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.movies img{
+    width: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.category {
+    padding: 30px 0 10px 40px;
+}
+
+.category p{
+    color: white;
+    margin-bottom: 10px ;
+}
+.keep-watching .movies{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.keep-watching .movies img, .next .movies img{
+    height: 125px;
+    
+}
+.keep-watching .movies div{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 1rem;
+   /* justify-content: center; */
+   align-items: center;
+}
+#progress-bar1,#progress-bar2,#progress-bar3, #progress-bar4, #progress-bar5, #progress-bar6{
+    height: 5px;
+    width: 300px;
+    /* padding: 15px; */
+}
+
+.original .movies img{
+    height: 450px;
+    /* width: 200px; */
+    
+}
+.top-10 .movies{
+    gap: 0.3rem;
+    align-items: center;
+}
+.ranking{
+    display: flex;
+}
+
+.ranking img{
+    height: 150px;
+}
+
+
+#footer{
+    margin-top: 50px;
+    padding: 30px 180px;
+    color: #757575;
+    font-size: 0.9rem;
+    background-color: #141414; 
+ }
+ .footer-links{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     gap: 1rem;
+ }
+ #questions{
+     margin-bottom: 2rem;
+ }
+ 
+ #footer #language{
+     margin-top: 2rem;
+ }

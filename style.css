@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+.hero-section{
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(images/landing-page/hero-img.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    padding: 20px 50px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.logo{
+    color: #E50914;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
+.nav-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#language{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    gap: 5px;
+    color: white;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    height: 30px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+#login{
+    background-color: #E50914;
+    height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 15px;
+    text-align: center;
+    /* object-position: center; */
+}
+.hero-contents {
+    color: white;
+    text-align: center;
+    /* margin: 80px auto 50px; */
+    font-family: Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+.hero-contents p{
+    margin: 10px;
+}
+.hero-title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+}
+#hero-2 {
+    /* font-weight: 400; */
+    font-size: 1.2rem;
+    line-height: 33px;
+    margin:20px 0;
+}
+#signup-text {
+    /* font-weight: 500; */
+    font-size: 1rem;
+    font-weight: 500;
+    /* line-height: 24px; */
+    letter-spacing: 0.009rem;
+    margin-bottom: 20px;
+}
+.signup{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* gap: 5px; */
+    
+}
+.signup input {
+    background-color: #FFFFFF;
+    border: 1px solid #8C8C8C;
+    border-radius: 2px 0px 0px 2px;
+    padding: 15px 20px;
+    font-size: 12px;
+    outline: none;
+    width: 350px;
+}
+#get-started {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #E50914;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.45);
+    border-radius: 0px 2px 2px 0px;
+    border: 1px solid transparent;
+    color: white;
+    width: 200px;
+    font-size: 15px;
+    letter-spacing: 0.09rem;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------ABOUT SECTION------------------------------------ */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    border-bottom: 8px solid #222222;
+    padding: 30px 20px;
+    /* height: ; */
+}
+
+.about .contents h2{
+    margin-bottom: 0.7rem;
+    font-size: 2rem;
+}
+
+.about .contents p{
+    font-size: 1.1rem;
+    letter-spacing: 0.09rem;
+}
+/* -------------------------------------FIRST ABOUT SECTION------------------------------------ */
+.about.about1{
+    border-top: 8px solid #222222;
+    width: 100%;
+    padding: 20px;
+}
+.about1 .img-group{
+    position: relative;
+    /* background-color: orange; */
+    height: 300px;
+    width: 400px;
+}
+#tv1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 300;
+    height: 250px;
+    width: 350px;
+    
+}
+#movie1{
+    position: absolute;
+    top: 72px;
+    left: 66px;
+    height: 137px;
+    width: 270px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ------------------------------------------------SECOND ABOUT SECTION---------------------------------------- */
+.about.about2{
+    padding: 40px 20px;
+    gap: 5rem;
+}
+.about2 .img-group{
+    /* background-color: orange; */
+}
+#movie2{
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* -------------------------------------------------------THIRD ABOUT SECTION----------------------------------------------- */
+.about3 .img-group{
+    position: relative;
+    /* background-color: orange; */
+    height: 300px;
+    width: 400px;
+}
+#tv3{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 300;
+    height: 250px;
+    width: 350px;
+}
+#movie3{
+    position: absolute;
+    top: 40px;
+    left: 85px;
+    height: 120px;
+    width: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* ----------------------------------------------------FAQs SECTION--------------------------------------- */
+.faqs{
+    padding: 60px;
+    border-bottom: 4px solid #222222;
+}
+.faqs h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303030;
+    width: 500px;
+    margin: 0 auto 15px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}
+.question img{
+    height: 15px;
+}
+
+.subscribe{
+    margin-top: 4rem;
+}
+.subscribe .signup-text{
+    text-align: center;
+}
+.subscribe #get-started{
+    justify-content: space-evenly;
+}
+
+/* -------------------------------------------FOOTER SECTION----------------------------------------------- */
+#footer{
+   margin-top: 50px;
+    padding: 30px 250px;
+    color: #757575;
+    font-size: 0.9rem;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+#questions{
+    margin-bottom: 2rem;
+}
+
+#footer #language{
+    margin-top: 2rem;
+}
+
+
+
+/* --------------------------------MEDIA QUERY FOR SMALL DEVICES------------------------- */
+@media screen and (max-width: 600px){
+    body {
+        /* background-color: orange; */
+    }
+    .hero-section{
+        min-height: 70vh;
+        padding: 20px 20px;
+        background-color: green;
+        overflow: hidden;
+    }
+    
+    .logo{
+        font-size: 30px;
+    }
+    
+    #language {
+        padding: 2px 5px;
+        height: 25px;
+    }
+    #login{
+        padding: 2px 8px;
+        text-align: center;
+        height: 25px;
+    }
+    #language img{
+        /* width: 15px; */
+    }
+    .hero-contents {
+        /* background-color: blue; */
+        top: 55%;
+    }
+    .hero-title {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+        /* background-color: green; */
+        overflow: hidden;
+    }
+    #hero-2{
+        font-size: 1.3rem;
+        margin: 15px 0;
+    }
+    #signup-text {
+        max-width: 300px;
+        margin: 0 auto 20px;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .signup{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    #get-started {
+        width: 150px;
+    }
+    .about.about1,.about.about3{
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 0;
+    }
+    .contents{
+        text-align: center;
+    }
+    #tv1{
+        top: 0px;
+    }
+    #movie1{
+        top: 52px;
+    }
+
+    .about.about2, .about.about4{
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        gap: 0;
+    }
+}

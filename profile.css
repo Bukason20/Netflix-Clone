@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: #282828;
+}
+.logo{
+    color: #E50914;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    margin: 20px;
+}
+.profiles{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.profile-title{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;;
+}
+.profile-img{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.profile-img img{
+    height: 120px;
+}
+#add{
+    height: 60px;
+    margin-left: 2rem;
+}

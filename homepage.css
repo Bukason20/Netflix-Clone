@@ -147,7 +147,7 @@ nav .second{
     align-items: center;
     gap: 0.3rem;
 }
-.keep-watching .movies img, .next .movies img{
+.keep-watching .movies img, .next .movies img, .listen .movies img{
     height: 125px;
     
 }
@@ -181,13 +181,25 @@ nav .second{
     height: 150px;
 }
 
+.listen{
+    padding-bottom: 0;
+}
+.listen .movies img{
+    display: block;
+}
+
 
 #footer{
-    margin-top: 50px;
     padding: 30px 180px;
     color: #757575;
     font-size: 0.9rem;
     background-color: #141414; 
+}
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
 }
 .footer-links{
     display: grid;
@@ -201,9 +213,17 @@ nav .second{
     margin-bottom: 2rem;
 }
  
-#footer #language{
-    margin-top: 2rem;
+#footer button{
+    margin: 2rem 0;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
 }
+
+
 
 /* --------------------------MEDIA QUERY FOR SMALL DEVICES-------------------------------------- */
 @media screen and (max-width: 600px){
